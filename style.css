@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0; 
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+        align-items: center;
+     background-color: hsl(30, 38%, 92%); 
+      font-family: "Montserrat", sans-serif ;
+      color: hsl(228, 12%, 48%); 
+     font-size: 14px;
+    line-height: 1.3rem;
+     height: 100vh;
+  }
+
+
+
+
+  
+  .card {
+    background-color: white;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    height: 400px;
+    width: 500px; 
+    border-radius: 15px; 
+  }
+  
+  .perfume-img-full {
+    height: 400px;
+    width: 100%; 
+    border-radius: 15px 0 0 15px; 
+  }
+  
+  .perfume-img-mobile {
+    display: none; 
+  }
+    
+  .text-div {
+    padding: 0 20px 10px;
+  
+  }
+  
+  .card-text {
+      padding: 0 10px; 
+      /* justify-self: center; */
+  }
+  
+  .perfume-word {
+  letter-spacing: .2rem;
+  padding: 25px 0; 
+  font-size: 0.6rem;
+  
+  }
+  .perfume-name {
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      color: black;
+      font-size: 1.4rem;
+      padding: 0 20px 20px 0; 
+  }
+  
+  .perfume-description {
+      font-size: .66rem;
+      padding-bottom: 20px;
+      padding-right: 10px;
+  }
+  
+  .prices {
+      display: flex;
+      column-gap: 10px;
+      align-items: center;
+      padding-top: 20px;
+  }
+  .sale-price {
+      font-family: 'Fraunces', serif;
+      font-weight: 700;
+      color: hsl(158, 36%, 37%);
+      font-size: 1.3rem;
+  }
+  
+  .original-price {
+   text-decoration: line-through;
+   font-size: .6rem;
+  }
+  
+  .button {
+      background-color: hsl(158, 36%, 37%);
+      border-radius: 10px;
+      border: none;
+      color: white;
+      margin-top: 20px; 
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      display: block;
+      width: 100%;
+      font-size: 0.8rem;
+   }
+
+   @media screen and (max-width: 600px) {
+    .card {
+      grid-template-columns: 1fr;
+      width: 300px;
+    }
+
+
+    .text-div {
+      background-color: white;
+      border-radius: 0 0 15px 15px; 
+
+    }
+
+    .perfume-img-full {
+           display: none; 
+    }
+    
+    .perfume-img-mobile {
+      display: block; 
+      height: 200px;
+      width: 100%;
+      border-radius: 15px 15px 0 0; 
+
+    }
+
+
+   }
